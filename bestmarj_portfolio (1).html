@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestMarj | Social Media Manager & Graphic Designer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdf8f5',
+                            100: '#fbeee6',
+                            200: '#f5d6c6',
+                            300: '#ebb29b',
+                            400: '#df896f',
+                            500: '#d3664d',
+                            600: '#c24e38',
+                            700: '#a23d2b',
+                            800: '#823225',
+                            900: '#6a2b20',
+                        },
+                        neutral: {
+                            850: '#1e1e24',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-gradient {
+            background: linear-gradient(135deg, #fdf8f5 0%, #fbeee6 100%);
+        }
+        .dark-gradient {
+            background: linear-gradient(135deg, #18181b 0%, #09090b 100%);
+        }
+    </style>
+</head>
+<body class="bg-brand-50 text-stone-800 font-sans transition-colors duration-300">
+
+    
+    <!-- HEADER & NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-brand-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2">
+                <span class="font-serif text-2xl font-bold tracking-wide text-brand-700">BestMarj</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-500 self-end mb-2"></span>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-stone-600">
+                <a href="#about" class="hover:text-brand-600 transition-colors">About</a>
+                <a href="#services" class="hover:text-brand-600 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-brand-600 transition-colors">My Work</a>
+                <a href="#insta-planner" class="hover:text-brand-600 transition-colors">Feed Grid</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-brand-600 text-white hover:bg-brand-700 transition-all duration-300 shadow-md shadow-brand-200">Let's Talk</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-stone-700 hover:text-brand-600 focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-brand-100 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#about" class="block text-stone-600 hover:text-brand-600 font-medium py-2">About</a>
+            <a href="#services" class="block text-stone-600 hover:text-brand-600 font-medium py-2">Services</a>
+            <a href="#portfolio" class="block text-stone-600 hover:text-brand-600 font-medium py-2">My Work</a>
+            <a href="#insta-planner" class="block text-stone-600 hover:text-brand-600 font-medium py-2">Feed Grid</a>
+            <a href="#contact" class="block text-center px-5 py-3 rounded-xl bg-brand-600 text-white hover:bg-brand-700 transition-all font-medium">Contact Me</a>
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-32 px-4 sm:px-6 lg:px-8 custom-gradient overflow-hidden relative">
+        <div class="absolute inset-0 opacity-40 mix-blend-overlay pointer-events-none">
+            <div class="absolute top-1/4 left-10 w-72 h-72 bg-brand-200 rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-1/3 right-10 w-96 h-96 bg-pink-100 rounded-full filter blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Hero Left -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center space-x-2 px-4 py-1.5 bg-brand-100/80 rounded-full text-brand-700 font-semibold text-xs uppercase tracking-wider">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                    </span>
+                    <span>Available for Freelance & Projects</span>
+                </div>
+                <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-stone-900 leading-[1.15]">
+                    I build brands that people love to <span class="text-brand-600 underline decoration-brand-300 decoration-wavy underline-offset-8">scroll</span>.
+                </h1>
+                <p class="text-stone-600 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Hello, I'm <strong class="text-brand-700">Marj</strong>. A multi-passionate Social Media Manager & Graphic Designer. I help beauty, lifestyle, and local businesses turn visual layouts into customer conversions.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 bg-brand-600 text-white font-medium rounded-full shadow-lg shadow-brand-200 hover:bg-brand-700 hover:shadow-xl transition-all text-center">
+                        Explore Work <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-white border border-brand-200 text-stone-700 font-medium rounded-full hover:bg-brand-50 hover:border-brand-300 transition-all text-center">
+                        Get in Touch
+                    </a>
+                </div>
+                
+                <!-- Quick stats -->
+                <div class="grid grid-cols-3 gap-6 pt-10 border-t border-brand-200 max-w-md mx-auto lg:mx-0">
+                    <div>
+                        <div class="font-serif text-3xl font-bold text-stone-900">4+</div>
+                        <div class="text-xs text-stone-500 uppercase tracking-wider font-semibold mt-1">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl font-bold text-stone-900">150+</div>
+                        <div class="text-xs text-stone-500 uppercase tracking-wider font-semibold mt-1">Designs Crafted</div>
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl font-bold text-stone-900">15%</div>
+                        <div class="text-xs text-stone-500 uppercase tracking-wider font-semibold mt-1">Avg Engagement Boost</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Right (Mock Graphic Asset) -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative w-full max-w-sm sm:max-w-md bg-white rounded-3xl p-6 shadow-2xl border border-brand-100/50">
+                    <!-- Decorative elements -->
+                    <div class="absolute -top-4 -left-4 bg-brand-200 text-brand-800 text-xs font-bold px-3 py-1.5 rounded-lg shadow-md rotate-[-6deg]">
+                        ✨ Brand Aesthetics expert
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-stone-900 text-white text-xs font-bold px-4 py-2 rounded-lg shadow-md rotate-[4deg] flex items-center gap-2">
+                        <i class="fa-brands fa-instagram text-brand-400"></i> Social Media Maven
+                    </div>
+                    
+                    <!-- Main visual display -->
+                    <div class="rounded-2xl overflow-hidden bg-brand-50 border border-brand-100 relative">
+                        <!-- Simulated Beauty Post / BestMarj Rebond -->
+                        <div class="p-4 bg-brand-100/50 flex items-center justify-between border-b border-brand-100">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-brand-300 flex items-center justify-center font-bold text-brand-800 text-xs font-serif">BM</div>
+                                <div>
+                                    <h4 class="text-xs font-bold text-stone-800">bestmarj_rebond</h4>
+                                    <p class="text-[10px] text-stone-500">Sponsored • Perfect Hair Everyday</p>
+                                </div>
+                            </div>
+                            <button class="text-stone-500 hover:text-stone-700 text-xs"><i class="fa-solid fa-ellipsis"></i></button>
+                        </div>
+                        
+                        <!-- Visual Image Placeholder styling -->
+                        <div class="h-64 bg-stone-900 flex flex-col items-center justify-center text-center p-6 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-cover bg-center opacity-70" style="background-image: url('https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800');"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 to-transparent"></div>
+                            
+                            <!-- Design overlay text -->
+                            <div class="relative z-10 mt-auto text-left w-full">
+                                <span class="bg-brand-500 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Transformation Day</span>
+                                <h3 class="font-serif text-2xl font-bold text-white mt-2 leading-tight">Silky, Shiny Rebond</h3>
+                                <p class="text-xs text-brand-200 mt-1">Book your glow-up session today!</p>
+                            </div>
+                        </div>
+
+                        <!-- Mini Interaction bar -->
+                        <div class="p-3 bg-white flex justify-between items-center text-stone-700 text-sm">
+                            <div class="flex space-x-4">
+                                <button class="hover:text-red-500 transition-colors"><i class="fa-regular fa-heart"></i></button>
+                                <button class="hover:text-brand-500 transition-colors"><i class="fa-regular fa-comment"></i></button>
+                                <button class="hover:text-brand-500 transition-colors"><i class="fa-regular fa-paper-plane"></i></button>
+                            </div>
+                            <button class="hover:text-brand-500 transition-colors"><i class="fa-regular fa-bookmark"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Client Testimonial preview inside hero -->
+                    <div class="mt-6 pt-6 border-t border-brand-100 flex items-start gap-3">
+                        <div class="flex text-yellow-400 text-xs mt-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-xs italic text-stone-500">"Marj perfectly captured our salon's vibe! Our page messages doubled in just 2 weeks!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-brand-600 font-semibold tracking-wider text-xs uppercase bg-brand-50 px-3 py-1.5 rounded-full">My Expertise</span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-stone-900">Creative Services That Drive Results</h2>
+                <p class="text-stone-600">I combine visual beauty with data-driven social tactics to help businesses stay top-of-mind.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-3xl bg-brand-50 hover:bg-white hover:shadow-2xl hover:shadow-brand-100 border border-brand-100/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-100 flex items-center justify-center text-brand-600 text-xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Social Media Strategy</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                        Custom strategies built around your target audience. From grid layout design to content calendars, scheduling, and analytics reporting.
+                    </p>
+                    <ul class="space-y-2.5 text-xs text-stone-700 font-medium">
+                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Feed Aesthetics & Visual Planning</li>
+                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Strategic Content Calendars</li>
+                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Competitor & Hashtag Research</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-3xl bg-brand-50 hover:bg-white hover:shadow-2xl hover:shadow-brand-100 border border-brand-100/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-100 flex items-center justify-center text-brand-600 text-xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Graphic Design & Assets</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                        Eye-catching visual assets that command attention in crowded feeds. Optimized for Facebook, Instagram, TikTok, and print collateral.
+                    </p>
+                    <ul class="space-y-2.5 text-xs text-stone-700 font-medium">
+                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Custom Social Media Carousel Templates</li>
+                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Salon & Small Business Brand Assets</li>
+                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Promotional Flyers & Price Lists</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-3xl bg-brand-50 hover:bg-white hover:shadow-2xl hover:shadow-brand-100 border border-brand-100/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-100 flex items-center justify-center text-brand-600 text-xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 font-serif">Content & Copywriting</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                        Captive captions paired with scroll-stopping video hooks. I write content that encourages likes, comments, shares, and bookings.
+                    </p>
+                    <ul class="space-y-2.5 text-xs text-stone-700 font-medium">
+                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Engaging Copywriting with Tagalog/English mix</li>
+                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Video Hook & Trend Outline guides</li>
+                        <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Call to Action (CTA) Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PORTFOLIO SHOWCASE SECTION -->
+    <section id="portfolio" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-brand-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="space-y-4">
+                    <span class="text-brand-600 font-semibold tracking-wider text-xs uppercase bg-brand-100 px-3 py-1.5 rounded-full">My Creative Works</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Featured Projects & Designs</h2>
+                </div>
+                <!-- Interactive Tabs -->
+                <div class="flex flex-wrap gap-2 bg-stone-100 p-1.5 rounded-2xl border border-brand-100 self-start">
+                    <button onclick="filterPortfolio('all')" id="tab-all" class="portfolio-tab px-5 py-2 rounded-xl text-sm font-semibold transition-all duration-300 bg-brand-600 text-white shadow-sm">
+                        All Works
+                    </button>
+                    <button onclick="filterPortfolio('social')" id="tab-social" class="portfolio-tab px-5 py-2 rounded-xl text-sm font-semibold transition-all duration-300 text-stone-600 hover:text-stone-900">
+                        Social Campaigns
+                    </button>
+                    <button onclick="filterPortfolio('graphic')" id="tab-graphic" class="portfolio-tab px-5 py-2 rounded-xl text-sm font-semibold transition-all duration-300 text-stone-600 hover:text-stone-900">
+                        Graphic Designs
+                    </button>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: Rebond campaign (Beauty niche focus) -->
+                <div class="portfolio-item social bg-white rounded-3xl overflow-hidden border border-brand-100/40 shadow-xl shadow-brand-100/20 group hover:-translate-y-2 transition-all duration-300">
+                    <div class="h-64 bg-stone-200 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&q=80&w=800');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-brand-600 text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Social Media & Ads</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif text-xl font-bold text-stone-900">BestMarj Rebond Campaign</h3>
+                        <p class="text-stone-600 text-sm">Full campaign management: Visuals, scheduling strategy, and promotional copy that generated over 80 message bookings in 30 days.</p>
+                        <div class="pt-4 flex items-center justify-between border-t border-stone-100">
+                            <span class="text-xs text-brand-600 font-bold bg-brand-100/60 px-2.5 py-1 rounded-md"><i class="fa-solid fa-chart-line mr-1"></i> +84% Reach Increase</span>
+                            <span class="text-xs text-stone-400 font-medium">Beauty Niche</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Price Menu/Graphics (Design focus) -->
+                <div class="portfolio-item graphic bg-white rounded-3xl overflow-hidden border border-brand-100/40 shadow-xl shadow-brand-100/20 group hover:-translate-y-2 transition-all duration-300">
+                    <div class="h-64 bg-stone-200 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-purple-600 text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Graphic Design</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif text-xl font-bold text-stone-900">Aesthetic Hair Services Menu</h3>
+                        <p class="text-stone-600 text-sm">Minimalist and visually clear price menu optimized for mobile screens. Made to help walk-in clients view and decide instantly.</p>
+                        <div class="pt-4 flex items-center justify-between border-t border-stone-100">
+                            <span class="text-xs text-purple-600 font-bold bg-purple-100/60 px-2.5 py-1 rounded-md"><i class="fa-solid fa-bezier-curve mr-1"></i> Clean Typography</span>
+                            <span class="text-xs text-stone-400 font-medium">Branding</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Social Carousel Grid (Social focus) -->
+                <div class="portfolio-item social bg-white rounded-3xl overflow-hidden border border-brand-100/40 shadow-xl shadow-brand-100/20 group hover:-translate-y-2 transition-all duration-300">
+                    <div class="h-64 bg-stone-200 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=800');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-brand-600 text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Social Media & Ads</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif text-xl font-bold text-stone-900">Instagram "How-To" Carousel</h3>
+                        <p class="text-stone-600 text-sm">Designed high-value content slides on "How to maintain your hair post-rebonding", achieving 120+ saves and 80+ shares.</p>
+                        <div class="pt-4 flex items-center justify-between border-t border-stone-100">
+                            <span class="text-xs text-brand-600 font-bold bg-brand-100/60 px-2.5 py-1 rounded-md"><i class="fa-solid fa-bookmark mr-1"></i> High Saves Focus</span>
+                            <span class="text-xs text-stone-400 font-medium">Infographics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Business Cards / Prints (Design focus) -->
+                <div class="portfolio-item graphic bg-white rounded-3xl overflow-hidden border border-brand-100/40 shadow-xl shadow-brand-100/20 group hover:-translate-y-2 transition-all duration-300">
+                    <div class="h-64 bg-stone-200 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&q=80&w=800');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-purple-600 text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Graphic Design</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif text-xl font-bold text-stone-900">Salon Brand Identity & Cards</h3>
+                        <p class="text-stone-600 text-sm">Chic loyalty cards and business cards designed with custom foil accents, projecting luxury aesthetics and high status.</p>
+                        <div class="pt-4 flex items-center justify-between border-t border-stone-100">
+                            <span class="text-xs text-purple-600 font-bold bg-purple-100/60 px-2.5 py-1 rounded-md"><i class="fa-solid fa-print mr-1"></i> Print-Ready CMYK</span>
+                            <span class="text-xs text-stone-400 font-medium">Mockups</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Facebook Cover Banner (Design focus) -->
+                <div class="portfolio-item graphic bg-white rounded-3xl overflow-hidden border border-brand-100/40 shadow-xl shadow-brand-100/20 group hover:-translate-y-2 transition-all duration-300">
+                    <div class="h-64 bg-stone-200 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=800');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-purple-600 text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Graphic Design</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif text-xl font-bold text-stone-900">Facebook Page Banner Set</h3>
+                        <p class="text-stone-600 text-sm">Cohesive headers optimized for desktop and mobile displays that showcase the brand tagline, opening hours, and hot offers clearly.</p>
+                        <div class="pt-4 flex items-center justify-between border-t border-stone-100">
+                            <span class="text-xs text-purple-600 font-bold bg-purple-100/60 px-2.5 py-1 rounded-md"><i class="fa-solid fa-crop-simple mr-1"></i> Dual-optimized Size</span>
+                            <span class="text-xs text-stone-400 font-medium">Facebook Art</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Customer Review Promo (Social focus) -->
+                <div class="portfolio-item social bg-white rounded-3xl overflow-hidden border border-brand-100/40 shadow-xl shadow-brand-100/20 group hover:-translate-y-2 transition-all duration-300">
+                    <div class="h-64 bg-stone-200 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-brand-600 text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Social Media & Ads</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <h3 class="font-serif text-xl font-bold text-stone-900">Social Proof Video Story Ads</h3>
+                        <p class="text-stone-600 text-sm">Interactive "Review & React" styled stories designed to boost local salon community trust, boosting walk-in bookings significantly.</p>
+                        <div class="pt-4 flex items-center justify-between border-t border-stone-100">
+                            <span class="text-xs text-brand-600 font-bold bg-brand-100/60 px-2.5 py-1 rounded-md"><i class="fa-solid fa-star-half-stroke mr-1"></i> Interactive Stories</span>
+                            <span class="text-xs text-stone-400 font-medium">Video / Copy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- INSTAGRAM LIVE PREVIEW PLANNER -->
+    <section id="insta-planner" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Information Left -->
+            <div class="lg:col-span-5 space-y-6">
+                <span class="text-brand-600 font-semibold tracking-wider text-xs uppercase bg-brand-50 px-3 py-1.5 rounded-full">Interactive Feature</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Interactive Social Media Feed Planner</h2>
+                <p class="text-stone-600 leading-relaxed">
+                    Social media strategy starts with an elegant grid aesthetic. Try rearranging or tapping on our interactive layout grids. As a Social Media Manager, I meticulously map, color-code, and visually plan grids so that a customer's first impression of your profile is stunning and highly professional.
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="flex gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                        <div>
+                            <h4 class="font-bold text-stone-900">Color Harmony</h4>
+                            <p class="text-xs text-stone-500">I use color patterns that complement each other and reflect your unique brand look.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                        <div>
+                            <h4 class="font-bold text-stone-900">Content Rhythm</h4>
+                            <p class="text-xs text-stone-500">I balance hair glow-up shots with customer reviews, pricing updates, and interactive carousels.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pt-4">
+                    <button onclick="shuffleGrid()" class="px-6 py-3 bg-stone-900 text-white rounded-full text-sm font-semibold hover:bg-stone-800 transition-all shadow-md flex items-center gap-2">
+                        <i class="fa-solid fa-shuffle"></i> Shuffle Feed Theme
+                    </button>
+                </div>
+            </div>
+
+            <!-- Feed Planner Right -->
+            <div class="lg:col-span-7 flex justify-center">
+                <div class="w-full max-w-md bg-stone-50 rounded-[2.5rem] border-[8px] border-stone-900 shadow-2xl p-4 relative aspect-[9/16] flex flex-col justify-between">
+                    <!-- Top Phone notch/bar -->
+                    <div class="flex justify-between items-center text-stone-500 text-[10px] font-bold px-2 mb-2">
+                        <span>10:45 AM</span>
+                        <div class="w-12 h-3.5 bg-black rounded-full"></div>
+                        <div class="flex space-x-1.5 items-center">
+                            <i class="fa-solid fa-signal"></i>
+                            <i class="fa-solid fa-wifi"></i>
+                            <i class="fa-solid fa-battery-three-quarters"></i>
+                        </div>
+                    </div>
+
+                    <!-- Instagram Header Inside -->
+                    <div class="flex items-center justify-between pb-3 border-b border-stone-200">
+                        <div class="flex items-center space-x-1.5">
+                            <i class="fa-solid fa-lock text-[10px]"></i>
+                            <span class="font-bold text-xs">bestmarj_creatives</span>
+                        </div>
+                        <div class="flex items-center space-x-4 text-sm text-stone-800">
+                            <i class="fa-regular fa-square-plus"></i>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+
+                    <!-- Profile Bio Panel -->
+                    <div class="py-4 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="w-16 h-16 rounded-full ring-2 ring-brand-400 p-1 bg-white">
+                                <div class="w-full h-full rounded-full bg-brand-200 flex items-center justify-center font-bold text-lg text-brand-800 font-serif">BM</div>
+                            </div>
+                            <div class="flex gap-4 text-center">
+                                <div>
+                                    <div class="text-xs font-bold" id="grid-posts-count">9</div>
+                                    <div class="text-[9px] text-stone-500">posts</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-bold">1.2K</div>
+                                    <div class="text-[9px] text-stone-500">followers</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-bold">342</div>
+                                    <div class="text-[9px] text-stone-500">following</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-xs">
+                            <p class="font-bold text-stone-900">BestMarj • Aesthetics & Salon SMM</p>
+                            <p class="text-[10px] text-stone-500">Beauty & Lifestyle Graphic Designer</p>
+                            <p class="text-[10px] text-stone-600">📱 Crafting premium layouts & campaigns.</p>
+                            <p class="text-[10px] text-stone-600">📞 <strong class="text-brand-700">09089762826</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Feed Grid layout -->
+                    <div class="grid grid-cols-3 gap-[2px] bg-stone-200 flex-grow" id="instagram-grid">
+                        <!-- Post 1 -->
+                        <div class="aspect-square bg-cover bg-center cursor-pointer relative group" style="background-image: url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&q=80&w=300');">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-[10px] font-bold transition-opacity">
+                                <i class="fa-solid fa-heart mr-1"></i> 142
+                            </div>
+                        </div>
+                        <!-- Post 2 -->
+                        <div class="aspect-square bg-cover bg-center cursor-pointer relative group" style="background-image: url('https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=300');">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-[10px] font-bold transition-opacity">
+                                <i class="fa-solid fa-heart mr-1"></i> 98
+                            </div>
+                        </div>
+                        <!-- Post 3 -->
+                        <div class="aspect-square bg-cover bg-center cursor-pointer relative group" style="background-image: url('https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=300');">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-[10px] font-bold transition-opacity">
+                                <i class="fa-solid fa-heart mr-1"></i> 210
+                            </div>
+                        </div>
+                        <!-- Post 4 -->
+                        <div class="aspect-square bg-cover bg-center cursor-pointer relative group" style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=300');">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-[10px] font-bold transition-opacity">
+                                <i class="fa-solid fa-heart mr-1"></i> 176
+                            </div>
+                        </div>
+                        <!-- Post 5 -->
+                        <div class="aspect-square bg-brand-100 flex flex-col justify-center items-center text-center p-2 cursor-pointer relative group text-brand-900 border border-brand-200">
+                            <p class="text-[8px] font-serif italic">"Invest in your hair, it is your crown."</p>
+                            <p class="text-[5px] uppercase font-bold tracking-widest text-brand-600 mt-1">- BestMarj</p>
+                        </div>
+                        <!-- Post 6 -->
+                        <div class="aspect-square bg-cover bg-center cursor-pointer relative group" style="background-image: url('https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&q=80&w=300');">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-[10px] font-bold transition-opacity">
+                                <i class="fa-solid fa-heart mr-1"></i> 85
+                            </div>
+                        </div>
+                        <!-- Post 7 -->
+                        <div class="aspect-square bg-cover bg-center cursor-pointer relative group" style="background-image: url('https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&q=80&w=300');">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-[10px] font-bold transition-opacity">
+                                <i class="fa-solid fa-heart mr-1"></i> 155
+                            </div>
+                        </div>
+                        <!-- Post 8 -->
+                        <div class="aspect-square bg-brand-900 flex flex-col justify-center items-center text-center p-2 cursor-pointer relative group text-brand-50">
+                            <p class="text-[8px] font-serif font-bold">Salon Launch Specals</p>
+                            <p class="text-[6px] tracking-wider text-brand-300 mt-0.5">BOOK TODAY</p>
+                        </div>
+                        <!-- Post 9 -->
+                        <div class="aspect-square bg-cover bg-center cursor-pointer relative group" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=300');">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-[10px] font-bold transition-opacity">
+                                <i class="fa-solid fa-heart mr-1"></i> 112
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Nav Inside phone mock -->
+                    <div class="flex justify-around items-center pt-2 border-t border-stone-200 text-stone-800 text-sm mt-1">
+                        <i class="fa-solid fa-house"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-regular fa-square-plus"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <div class="w-5 h-5 bg-stone-300 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CLIENT TESTIMONIALS -->
+    <section class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-brand-50 border-t border-brand-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <span class="text-brand-600 font-semibold tracking-wider text-xs uppercase bg-brand-100 px-3 py-1.5 rounded-full">Testimonials</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">What Clients Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 rounded-3xl bg-white border border-brand-100/50 shadow-md flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-yellow-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-600 text-sm italic leading-relaxed">
+                            "Marj is incredible at both design and caption writing. She took over our hair brand's Facebook page, and we instantly saw a rise in daily client bookings. She has a high sense of aesthetic beauty!"
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-stone-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-200 flex items-center justify-center font-bold text-sm text-brand-800">KC</div>
+                        <div>
+                            <h4 class="font-bold text-stone-900 text-sm">Kathy C.</h4>
+                            <p class="text-xs text-stone-500">Salon & Spa Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-3xl bg-white border border-brand-100/50 shadow-md flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-yellow-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-600 text-sm italic leading-relaxed">
+                            "I needed social media graphics done within a short period of time. Marj understood our aesthetic preferences immediately, sending beautiful graphic options without needing much revision."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-stone-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-200 flex items-center justify-center font-bold text-sm text-brand-800">RM</div>
+                        <div>
+                            <h4 class="font-bold text-stone-900 text-sm">Rachelle M.</h4>
+                            <p class="text-xs text-stone-500">Lifestyle E-commerce Founder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-3xl bg-white border border-brand-100/50 shadow-md flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-yellow-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-stone-600 text-sm italic leading-relaxed">
+                            "Very professional and reliable! Her creative planning kept our social media page fresh and modern. Strongly recommend her services for anyone seeking a premium online presence."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-stone-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-200 flex items-center justify-center font-bold text-sm text-brand-800">JG</div>
+                        <div>
+                            <h4 class="font-bold text-stone-900 text-sm">Justin G.</h4>
+                            <p class="text-xs text-stone-500">Business Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / HIRE ME SECTION -->
+    <section id="contact" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-stone-900 text-white relative overflow-hidden">
+        <!-- Floating shapes -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <div class="absolute bottom-10 left-10 w-96 h-96 bg-brand-400 rounded-full filter blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
+            <!-- Contact Details -->
+            <div class="lg:col-span-5 space-y-8">
+                <div class="space-y-4">
+                    <span class="text-brand-400 font-semibold tracking-wider text-xs uppercase">Get in touch</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold">Let's create something beautiful together!</h2>
+                    <p class="text-stone-300">Ready to boost your brand visuals and online presence? Send an inquiry or give me a call/text!</p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-stone-800 border border-stone-700 flex items-center justify-center text-brand-400 text-lg">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-stone-400 uppercase tracking-wider">Call or Text Me</p>
+                            <a href="tel:09089762826" class="text-lg font-bold hover:text-brand-300 transition-all">09089762826</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-stone-800 border border-stone-700 flex items-center justify-center text-brand-400 text-lg">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-stone-400 uppercase tracking-wider">Email Me</p>
+                            <a href="mailto:bestmarj.creatives@gmail.com" class="text-lg font-bold hover:text-brand-300 transition-all">bestmarj.creatives@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-stone-800 border border-stone-700 flex items-center justify-center text-brand-400 text-lg">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-stone-400 uppercase tracking-wider">Location</p>
+                            <p class="text-base font-semibold">Central Visayas, Philippines</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 pt-4">
+                    <a href="tel:09089762826" class="w-10 h-10 rounded-full bg-stone-800 hover:bg-brand-600 flex items-center justify-center text-sm transition-all"><i class="fa-solid fa-phone-flip"></i></a>
+                    <a href="https://viber.com" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 hover:bg-brand-600 flex items-center justify-center text-sm transition-all"><i class="fa-brands fa-viber"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded-full bg-stone-800 hover:bg-brand-600 flex items-center justify-center text-sm transition-all"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Interactive Hiring Form -->
+            <div class="lg:col-span-7 bg-stone-800/80 backdrop-blur-md border border-stone-700 p-8 rounded-3xl shadow-xl">
+                <h3 class="font-serif text-2xl font-bold mb-6">Send an Inquiry & Chat Instantly</h3>
+                <form id="portfolio-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <label class="text-xs text-stone-400 uppercase tracking-wider font-semibold">Your Name</label>
+                            <input type="text" id="form-name" required placeholder="Juana Dela Cruz" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-stone-200 placeholder-stone-500 focus:outline-none focus:border-brand-400 transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs text-stone-400 uppercase tracking-wider font-semibold">Email / Contact Number</label>
+                            <input type="text" id="form-contact" required placeholder="e.g. 09123456789" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-stone-200 placeholder-stone-500 focus:outline-none focus:border-brand-400 transition-all">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-xs text-stone-400 uppercase tracking-wider font-semibold">What service do you need?</label>
+                        <select id="form-service" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-stone-300 focus:outline-none focus:border-brand-400 transition-all">
+                            <option value="Social Media Management & Strategy">Social Media Management (SMM)</option>
+                            <option value="Graphic Design & Branding">Graphic Design & Branding</option>
+                            <option value="Full Package (SMM + Graphic Design)">Full Package (SMM + Designs)</option>
+                            <option value="Custom Beauty / Rebond Promo Designs">Beauty / Salon Visual Designs</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-xs text-stone-400 uppercase tracking-wider font-semibold">Tell me about your project</label>
+                        <textarea id="form-project" required rows="4" placeholder="Briefly describe what your business needs..." class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-stone-200 placeholder-stone-500 focus:outline-none focus:border-brand-400 transition-all"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-brand-600 text-white font-semibold rounded-xl hover:bg-brand-500 transition-all shadow-lg flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Send via SMS / Inquire Now
+                    </button>
+                    <p class="text-[10px] text-stone-400 text-center mt-2">
+                        Clicking submit formats your details so you can directly SMS or call Marj at **09089762826** instantly!
+                    </p>
+                </form>
+
+                <!-- Success Alert Container -->
+                <div id="form-alert" class="hidden mt-4 p-4 bg-green-900/40 border border-green-500 text-green-200 text-xs rounded-xl flex items-center justify-between">
+                    <div>
+                        <strong class="font-bold">Inquiry prepared!</strong> If you are on a phone, you will be prompted to send an SMS template directly to <strong class="text-white">09089762826</strong>!
+                    </div>
+                    <button onclick="document.getElementById('form-alert').classList.add('hidden')" class="text-green-200 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-950 text-stone-400 py-12 px-4 sm:px-6 lg:px-8 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center space-x-2">
+                <span class="font-serif text-xl font-bold tracking-wide text-brand-400">BestMarj</span>
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-500 self-end mb-1.5"></span>
+            </div>
+            
+            <p class="text-xs text-center md:text-left">
+                &copy; 2026 BestMarj Portfolio. All Rights Reserved. Crafted with passion.
+            </p>
+            
+            <div class="flex space-x-6 text-sm">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT FOR INTERACTIVE LOGIC -->
+    <script>
+        // Toggle Mobile Menu Drawer
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide drawer upon clicking a menu item
+        const links = mobileMenu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Portfolio Category Filter Logic
+        function filterPortfolio(category) {
+            // Update Tab Highlights
+            const tabs = document.querySelectorAll('.portfolio-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-brand-600', 'text-white', 'shadow-sm');
+                tab.classList.add('text-stone-600', 'hover:text-stone-900');
+            });
+
+            const activeTab = document.getElementById(`tab-${category}`);
+            if (activeTab) {
+                activeTab.classList.remove('text-stone-600', 'hover:text-stone-900');
+                activeTab.classList.add('bg-brand-600', 'text-white', 'shadow-sm');
+            }
+
+            // Show / Hide Items
+            const items = document.querySelectorAll('.portfolio-item');
+            items.forEach(item => {
+                if (category === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    if (item.classList.contains(category)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Shuffle / Generate dynamic layout designs in the Instagram Mock Grid
+        const mockThemes = [
+            // Theme 1: Rose Gold & Luxury Hair Spa
+            [
+                { url: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '142' },
+                { url: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '98' },
+                { url: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '210' },
+                { url: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '176' },
+                { type: 'quote', text: '"Invest in your hair, it is your crown."', author: '- BestMarj' },
+                { url: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '85' },
+                { url: "https://images.unsplash.com/photo-1541462608141-ad4979e408c9?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '155' },
+                { type: 'promo', title: 'Salon Launch Specials', subtitle: 'BOOK TODAY' },
+                { url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '112' }
+            ],
+            // Theme 2: Minimalist Clean Aesthetics (Grey & Cream)
+            [
+                { type: 'promo', title: 'Flawless Rebonding', subtitle: 'Promo Week' },
+                { url: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '245' },
+                { url: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '189' },
+                { url: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '312' },
+                { type: 'quote', text: '"A woman who cuts her hair is about to change her life."', author: '- Coco' },
+                { url: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '150' },
+                { type: 'promo', title: 'Hair Treatment • P999 Only', subtitle: 'LIMITED SLOTS' },
+                { url: "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '220' },
+                { url: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=300", type: 'image', likes: '302' }
+            ]
+        ];
+
+        let activeThemeIdx = 0;
+
+        function shuffleGrid() {
+            activeThemeIdx = activeThemeIdx === 0 ? 1 : 0;
+            const chosenTheme = mockThemes[activeThemeIdx];
+            const gridContainer = document.getElementById('instagram-grid');
+            
+            // Clear current items
+            gridContainer.innerHTML = '';
+
+            chosenTheme.forEach(post => {
+                const element = document.createElement('div');
+                element.className = "aspect-square cursor-pointer relative group transition-all duration-300";
+                
+                if (post.type === 'image') {
+                    element.style.backgroundImage = `url('${post.url}')`;
+                    element.className += " bg-cover bg-center";
+                    element.innerHTML = `
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center text-white text-[10px] font-bold transition-opacity">
+                            <i class="fa-solid fa-heart mr-1"></i> ${post.likes}
+                        </div>
+                    `;
+                } else if (post.type === 'quote') {
+                    element.className += " bg-brand-100 flex flex-col justify-center items-center text-center p-2 text-brand-900 border border-brand-200";
+                    element.innerHTML = `
+                        <p class="text-[8px] font-serif italic">${post.text}</p>
+                        <p class="text-[5px] uppercase font-bold tracking-widest text-brand-600 mt-1">${post.author}</p>
+                    `;
+                } else if (post.type === 'promo') {
+                    element.className += " bg-brand-900 flex flex-col justify-center items-center text-center p-2 text-brand-50";
+                    element.innerHTML = `
+                        <p class="text-[8px] font-serif font-bold">${post.title}</p>
+                        <p class="text-[6px] tracking-wider text-brand-300 mt-0.5">${post.subtitle}</p>
+                    `;
+                }
+
+                gridContainer.appendChild(element);
+            });
+        }
+
+        // Contact Form Handling (Prepares SMS details to the provided phone number)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('form-name').value;
+            const contact = document.getElementById('form-contact').value;
+            const service = document.getElementById('form-service').value;
+            const details = document.getElementById('form-project').value;
+
+            // Generate direct SMS format (or whatsapp link)
+            const targetNumber = "09089762826";
+            const smsMessage = `Hi Marj! My name is ${name}. I am interested in your "${service}" package. My contact info is ${contact}. Details: ${details}`;
+            
+            // Generate link for both mobile and desktop (sms protocol)
+            const smsHref = `sms:${targetNumber}?body=${encodeURIComponent(smsMessage)}`;
+            
+            // Show custom alert inside page
+            const alertBox = document.getElementById('form-alert');
+            alertBox.classList.remove('hidden');
+
+            // Copy text summary using fallback clipboard copy
+            const tempInput = document.createElement('textarea');
+            tempInput.value = smsMessage;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Attempt to trigger SMS client immediately
+            window.location.href = smsHref;
+        }
+    </script>
+</body>
+</html>
